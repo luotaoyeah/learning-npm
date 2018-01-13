@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "author": "luotao",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev": "node ./src/index.js"
+  },
   "dependencies": {},
   "devDependencies": {
     "husky": "^1.3.1",
