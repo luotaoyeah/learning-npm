@@ -1,0 +1,10 @@
+/src
+/node_modules
+/.idea
+.gitignore
+.huskyrc
+.lintstagedrc
+.npmignore
+.prettierignore
+.prettierrc
+package-lock.json
