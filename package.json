@@ -2,7 +2,6 @@
   "name": "@luotao/learning-npm",
   "version": "0.0.1",
   "author": "luotao",
-  "private": true,
   "scripts": {
     "dev": "node ./src/index.js"
   },

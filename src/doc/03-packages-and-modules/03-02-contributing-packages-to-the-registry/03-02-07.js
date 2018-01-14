@@ -13,5 +13,11 @@ console.log("\n-------------------------------------------------- 01");
    *
    * 如果要给某个已经发布了的版本添加 dist-tag，可以通过下面的命令：
    *     $ npm dist-tag add <package>@<version> <sometag>
+   *
+   * 如果要删除某个 dist-tag，可以使用下面的命令：
+   *     $ npm dist-tag rm <package> <sometag>
+   *
+   * 如果要查看所有的 dist-tag，可以使用下面的命令：
+   *     $ npm dist-tag ls <package>
    */
 }
