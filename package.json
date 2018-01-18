@@ -3,7 +3,10 @@
   "version": "0.0.2",
   "author": "luotao",
   "scripts": {
-    "dev": "node ./src/index.js"
+    "dev": "node ./src/index.js",
+    "preshrinkwrap": "echo PRESHRINKWRAP",
+    "shrinkwrap": "echo SHRINKWRAP",
+    "postshrinkwrap": "echo POSTSHRINKWRAP"
   },
   "dependencies": {},
   "devDependencies": {
