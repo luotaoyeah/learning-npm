@@ -46,14 +46,16 @@ console.log("\n-------------------------------------------------- 01");
          */
         optional: true,
         /*
-         * requires 表示该包的 package.json 文件中的 dependencies 下面的内容
+         * requires 表示该包的 package.json 文件中的 dependencies 下面的内容，
+         * 即理论上必须安装的依赖包
          */
         requires: {
           x: "0.0.1",
           y: "0.0.2"
         },
         /*
-         * dependencies 表示该包的目录下的 node_modules 目录下实际安装的包的情况
+         * dependencies 表示该包的目录下的 node_modules 目录下实际安装的包的情况，
+         * 因为有些包已经在上级目录中被安装了，所以在该包目录下就不需要再安装了
          */
         dependencies: {}
       }
