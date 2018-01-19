@@ -40,6 +40,39 @@ console.log("\n-------------------------------------------------- 01");
      * 首页
      * 项目首页地址
      */
-    homepage: ""
+    homepage: "<url>",
+    /*
+     * 项目的 issue 地址，以及报告 issue 的邮箱
+     * 如果只指定 url 地址，可以直接使用字符串的形式（bugs: "http://xxx"），
+     * 当执行 $ npm bugs <pkgname> 命令时，会自动使用浏览器打开这个地址
+     */
+    bugs: {
+      url: "<url>",
+      email: "<email>"
+    },
+    /*
+     * 许可协议
+     */
+    license: "UNLICENSED",
+    /*
+     * 作者
+     * 可以使用对象的形式（author: { name: "<name>", email: "<email>", url: "<url>" }）
+     * 可以使用字符串的形式（author: "luotao[ <<email>>][ (<url>)]"）
+     */
+    author: {
+      name: "<name>",
+      email: "<email>",
+      url: "<url>"
+    },
+    /*
+     * 贡献者列表
+     */
+    contributors: [
+      {
+        name: "<name>",
+        email: "<email>",
+        url: "<url>"
+      }
+    ]
   };
 }
