@@ -73,6 +73,41 @@ console.log("\n-------------------------------------------------- 01");
         email: "<email>",
         url: "<url>"
       }
-    ]
+    ],
+    /*
+     * files 属性用来指定哪些文件`会`被打包
+     * 语法格式跟 .gitignore 一致，默认值为 ["*"]，即打包所有文件
+     *
+     * 相反的，.npmignore 文件用来指定哪些文件`不`被打包，
+     * 当 .npmignore 不存在时，会使用 .gitignore 的内容作为 .npmignore 的默认内容
+     *
+     * 当某个文件同时出现在 files 和 .npmignore 中时，该文件`会`被打包
+     *
+     * 有些文件不会受 files 和 .npmignore 的影响，始终都`会`被打包：
+     *     package.json
+     *     README
+     *     CHANGES / CHANGELOG / HISTORY
+     *     LICENSE / LICENCE
+     *     NOTICE
+     * 除了 package.json 之外，其他的文件，文件名`不`区分大小写，且可以是任意的后缀
+     *
+     * 有些文件不会受 files 和 .npmignore 的影响，始终都`不会`被打包：
+     *     .git
+     *     .svn
+     *     .hg
+     *     .lock-wscript
+     *     .wafpickle-N
+     *     .*.swp
+     *     .DS_Store
+     *     ._*
+     *     .npmrc
+     *     CVS
+     *     npm-debug.log
+     *     node_modules
+     *     config.gypi
+     *     *.orig
+     *     package-lock.json
+     */
+    files: ["*"]
   };
 }
