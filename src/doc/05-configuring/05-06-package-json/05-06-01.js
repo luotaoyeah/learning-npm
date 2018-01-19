@@ -89,6 +89,7 @@ console.log("\n-------------------------------------------------- 01");
      *     CHANGES / CHANGELOG / HISTORY
      *     LICENSE / LICENCE
      *     NOTICE
+     *     package.json#main 属性指定的文件
      * 除了 package.json 之外，其他的文件，文件名`不`区分大小写，且可以是任意的后缀
      *
      * 有些文件不会受 files 和 .npmignore 的影响，始终都`不会`被打包：
@@ -108,6 +109,14 @@ console.log("\n-------------------------------------------------- 01");
      *     *.orig
      *     package-lock.json
      */
-    files: ["*"]
+    files: ["*"],
+    /*
+     * 用来指定模块的入口
+     * 入口文件的地址是相对于项目的根目录的
+     * 如下，如果指定 main 为 dist/index.js，
+     *     则当用户引入模块时：import "<pkgname>"，
+     *     实际上相当于：     import "<pkgname>/dist/index.js"
+     */
+    main: "dist/index.js"
   };
 }
