@@ -117,6 +117,19 @@ console.log("\n-------------------------------------------------- 01");
      *     则当用户引入模块时：import "<pkgname>"，
      *     实际上相当于：     import "<pkgname>/dist/index.js"
      */
-    main: "dist/index.js"
+    main: "dist/index.js",
+    /*
+     * 用来指定用于浏览器的脚本的文件地址
+     * browser 跟 main 的区别：
+     *     当在 nodejs 环境下引入模块时，会使用 main 属性，
+     *     当在浏览器环境下引入脚本时，会使用 browser 属性
+     *
+     * 比如使用 webpack 打包时，
+     *     如果指定 target 为 node，则引入模块时会使用 main 属性，
+     *     如果指定 target 为 browser，则引入模块时会使用 browser 属性
+     *
+     * 参考 https://github.com/defunctzombie/package-browser-field-spec
+     */
+    browser: "dist/index-browser.js"
   };
 }
